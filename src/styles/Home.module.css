@@ -18,17 +18,19 @@
 }
 
 .allPokemon {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin-left: -35px;
+    justify-content: center;
+    gap: 0.5em;
 }
 
 .allPokemon li {
     border: 1px solid white;
     border-radius: 10px;
     text-align: center;
+    width: 32%;
 }
 
 .allPokemon li .pokemon {
@@ -68,13 +70,13 @@
 }
 
 @media screen and (max-width: 767px) {
-    .allPokemon {
-        grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+    .allPokemon li {
+        width: 48%;
     }
 }
 
 @media screen and (max-width: 468px) {
-    .allPokemon {
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    .allPokemon li {
+        width: 100%;
     }
 }
