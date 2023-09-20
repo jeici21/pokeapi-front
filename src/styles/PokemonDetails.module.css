@@ -51,6 +51,16 @@
     margin-bottom: 5px;
 }
 
+@media (prefers-color-scheme: light) {
+    .modal {
+        background-color: #fff;
+    }
+
+    .fila2 button {
+        background-color: silver;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .columna {
         flex-direction: column;

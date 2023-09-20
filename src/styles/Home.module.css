@@ -57,6 +57,16 @@
     justify-content: center;
 }
 
+@media (prefers-color-scheme: light) {
+    .allPokemon li {
+        border: 1px solid black;
+    }
+
+    .detalles {
+        background-color: silver;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .allPokemon {
         grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
