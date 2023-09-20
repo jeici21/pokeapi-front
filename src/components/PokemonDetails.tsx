@@ -6,8 +6,8 @@ interface PokemonDetailsProps { pokemon: TPokemon; isOpen: boolean; onClose: () 
 
 const PokemonDetails = ({ pokemon, isOpen, onClose }: PokemonDetailsProps) => {
     return (
-        <Modal isOpen={isOpen} onRequestClose={onClose} contentLabel="Detalles del Pokémon" overlayClassName={styles.modalOverlay}
-            className={styles.modal}>
+        <Modal isOpen={isOpen} onRequestClose={onClose} contentLabel="Detalles del Pokémon"
+            overlayClassName={styles.modalOverlay} className={styles.modal}>
             <div className={styles.columna}>
                 <div className={styles.fila1}>
                     <img src={pokemon.img} alt="Imagen pokémon" className={styles.pokemon} />
