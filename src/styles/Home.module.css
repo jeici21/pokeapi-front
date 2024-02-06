@@ -1,82 +1,82 @@
 .loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .spinner {
-    animation: spin 1s linear infinite;
-    height: 10%;
-    width: 10%;
+  animation: spin 1s linear infinite;
+  height: 10%;
+  width: 10%;
 }
 
 @keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .allPokemon {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin-left: -35px;
-    justify-content: center;
-    gap: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: -35px;
+  justify-content: center;
+  gap: 0.5em;
 }
 
 .allPokemon li {
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: center;
-    width: 32%;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  width: 32%;
 }
 
 .allPokemon li .pokemon {
-    margin-bottom: -30px;
+  margin-bottom: -30px;
 }
 
 .types {
-    text-align: center;
-    margin-top: -15px;
+  text-align: center;
+  margin-top: -15px;
 }
 
 .type1,
 .type2 {
-    height: 30px;
-    width: 120px;
-    margin: 0 5px;
+  height: 30px;
+  width: 120px;
+  margin: 0 5px;
 }
 
 .detalles {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .pageButtons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (prefers-color-scheme: light) {
-    .allPokemon li {
-        border: 1px solid black;
-    }
+  .allPokemon li {
+    border: 1px solid black;
+  }
 
-    .detalles {
-        background-color: silver;
-    }
+  .detalles {
+    background-color: silver;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .allPokemon li {
-        width: 48%;
-    }
+  .allPokemon li {
+    width: 48%;
+  }
 }
 
 @media screen and (max-width: 468px) {
-    .allPokemon li {
-        width: 100%;
-    }
+  .allPokemon li {
+    width: 100%;
+  }
 }

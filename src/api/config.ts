@@ -10,4 +10,4 @@ export type TPokemon = {
     img: string
 }
 
-export const API_URL = 'https://pokeapi-back.up.railway.app/'
+export const API_URL = 'https://pokeapi-back-g5nq.onrender.com/'
